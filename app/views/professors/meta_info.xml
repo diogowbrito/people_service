@@ -1,4 +1,4 @@
-<service name="people" url="http://193.136.122.76:3001">
+<service name="people" url="<%=$myApplicationURL%>">
     <provider>G6</provider>
     <serviceID>plp</serviceID>
     <type>academics</type>
