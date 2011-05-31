@@ -36,16 +36,52 @@
       <file leaf-file-name="meta_info.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/professors/meta_info.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+            <state line="0" column="28" selection-start="28" selection-end="51" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.xml.builder" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search.xml.builder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/professors/search.xml.builder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="85" selection-start="226" selection-end="226" vertical-scroll-proportion="0.09756097">
+            <state line="4" column="85" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recommendation.xml.builder" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/professors/recommendation.xml.builder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="professors_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/professors_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="28" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="specificsearch.xml.builder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/professors/specificsearch.xml.builder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="87" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="specific.xml.builder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/professors/specific.xml.builder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="9" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,6 +109,7 @@
         <option value="$PROJECT_DIR$/app/views/professors/meta_info.xml" />
         <option value="$PROJECT_DIR$/app/views/professors/list.xml.builder" />
         <option value="$PROJECT_DIR$/app/views/professors/search.xml.builder" />
+        <option value="$PROJECT_DIR$/app/views/professors/specificsearch.xml.builder" />
       </list>
     </option>
   </component>
@@ -728,7 +765,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1" width="1280" height="775" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -780,11 +817,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/degrees_and_courses/status.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" />
@@ -823,23 +855,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/professors_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="28" selection-start="544" selection-end="544" vertical-scroll-proportion="0.08064516">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/professors/description.xml.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="49" selection-start="209" selection-end="209" vertical-scroll-proportion="0.078809105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/professors/specific.xml.builder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="9" selection-start="448" selection-end="448" vertical-scroll-proportion="0.35413152">
           <folding />
         </state>
       </provider>
@@ -858,20 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/professors/recommendation.xml.builder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/professors/meta_info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/professors/list.xml.builder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="91" selection-start="227" selection-end="247" vertical-scroll-proportion="0.0">
@@ -879,9 +883,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/professors_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="28" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/professors/meta_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/professors/specificsearch.xml.builder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="87" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/professors/specific.xml.builder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/professors/search.xml.builder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="85" selection-start="226" selection-end="226" vertical-scroll-proportion="0.09756097">
+        <state line="4" column="85" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/professors/recommendation.xml.builder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
