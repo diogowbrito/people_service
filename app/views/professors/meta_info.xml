@@ -1,4 +1,4 @@
-<service name="people" url="<%=$myApplicationURL%>">
+<service name="people" url="<%=@address%>">
     <provider>G6</provider>
     <serviceID>plp</serviceID>
     <type>academics</type>

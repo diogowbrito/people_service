@@ -1,4 +1,4 @@
 <record title="Serviço sobre Pessoas">
   <text>Este serviço fornece informação detalhada sobre todos os docentes da FCT</text>
-  <link href='<%=$myApplicationURL%>/people'>Lista de Professores</link>
+  <link href="<%=@address+'/people'%>">Lista de Professores</link>
 </record>
