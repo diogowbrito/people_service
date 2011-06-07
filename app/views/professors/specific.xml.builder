@@ -8,10 +8,7 @@ xml.record(:title => "Professor") do
     end
   end
   if @professor.building != nil then
-    xml.text(:title => "Office Location") do
-      xml.entity(@professor.building, :kind => "building")
-      xml.entity(@professor.room, :kind => "room")
-    end
+      xml.entity(@professor.building+" "+@professor.room, :title => "Office Location", :kind => "room")
   end
   xml.text(@professor.category, :title => "Category")
   xml.entity(@professor.sector, :title => "Sector", :kind => "organizational unit")
