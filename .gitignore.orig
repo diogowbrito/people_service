@@ -1,0 +1,10 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+<<<<<<< HEAD
+.idea/workspace.xml
+=======
+.ideia/workspace.xml
+
+>>>>>>> 261a389820c9c6893b23289b7f21f5b790bd4f9e

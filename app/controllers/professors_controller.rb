@@ -3,10 +3,12 @@ class ProfessorsController < ApplicationController
   # GET /professors.xml
 
   def description
+    @address = get_address
     respond_to :xml
   end
 
   def meta_info
+    @address = get_address
     respond_to :xml
   end
 
@@ -15,6 +17,7 @@ class ProfessorsController < ApplicationController
   end
 
   def list
+    @address = get_address
     @start = params[:start] || '1'
     @end = params[:end] || '20'
     @next = @end.to_i+1
@@ -37,7 +40,7 @@ class ProfessorsController < ApplicationController
   end
 
   def search
-
+    @address = get_address
     @keyword =  params[:keyword].gsub("%", "\%").gsub("_", "\_")
     @start = params[:start] || '1'
     @end = params[:end] || '20'
