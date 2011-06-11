@@ -49,7 +49,7 @@ class ProfessorsController < ApplicationController
     @keyword =  params[:keyword].gsub("%", "\%").gsub("_", "\_")
     @start = (params[:start] || '1').to_i
     @end = (params[:end] || '20').to_i
-    @next = @address+"/search?keyword="+@keyword+"start="+(@end+1).to_s+"&end="+(@end+1+@end-@start).to_s
+    @next = @address+"/search?keyword="+@keyword+"&start="+(@end+1).to_s+"&end="+(@end+1+@end-@start).to_s
     keyarray = @keyword.to_s.split(' ')
     professors = Professor.find(:all, :order => :professor_name, :conditions=> ["professor_name like ?","%"+@keyword+"%"])
 
