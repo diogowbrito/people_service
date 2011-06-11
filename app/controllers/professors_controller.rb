@@ -18,14 +18,18 @@ class ProfessorsController < ApplicationController
 
   def list
     @address = get_address
-    @start = params[:start] || '1'
-    @end = params[:end] || '20'
-    @next = @end.to_i+1
+    @start = (params[:start] || '1').to_i
+    @end = (params[:end] || '20').to_i
+    @next = @address+"/people?start="+(@end+1).to_s+"&end="+(@end+1+@end-@start).to_s
 
-    @professors = Professor.find(:all, :order => "professor_name", :offset => @start.to_i-1, :limit => @end.to_i+1-@start.to_i)
+    @professors = Professor.find(:all, :order => "professor_name", :offset => @start-1, :limit => @end+1-@start.to_i)
 
-    if @professors.count != 20 then
+    if @professors.count != @end+1-@start then
       @next = ""
+    else
+      if @professors[@end-@start].professor_name == Professor.order(:professor_name).last.professor_name
+        @next = ""
+      end
     end
 
     respond_to :xml
