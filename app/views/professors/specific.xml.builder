@@ -1,7 +1,7 @@
-xml.record(:title => "Professor") do
+xml.record(:title => "Professor: " + @professor.professor_name) do
   xml.text(@professor.professor_name, :title => "Nome")
   if @emails.count != 0 then
-    xml.text(:title => "Emails") do
+    xml.text(:title => "Emails:") do
       @emails.each do |email|
         xml.email(email.email)
       end
@@ -13,7 +13,7 @@ xml.record(:title => "Professor") do
   xml.text(@professor.category, :title => "Categoria")
   xml.entity(@professor.sector, :title => "Sector", :kind => "organizational unit")
   if @courses.count != 0 then
-    xml.text(:title => "Cadeiras") do
+    xml.text(:title => "Cadeiras:") do
       @courses.each do |course|
         xml.entity(course.course_name, :kind => "course")
       end
