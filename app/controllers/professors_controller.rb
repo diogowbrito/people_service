@@ -46,7 +46,7 @@ class ProfessorsController < ApplicationController
     @end = params[:end] || '20'
     @next = @end.to_i+1
     keyarray = @keyword.to_s.split(' ')
-    professors = Professor.find(:all, :conditions=> ["professor_name like ?","%"+@keyword+"%"])
+    professors = Professor.find(:all, :order => :professor_name, :conditions=> ["professor_name like ?","%"+@keyword+"%"])
 
     @list = []
     counter = 1
