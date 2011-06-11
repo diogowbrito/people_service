@@ -44,11 +44,12 @@ class ProfessorsController < ApplicationController
   end
 
   def search
+
     @address = get_address
     @keyword =  params[:keyword].gsub("%", "\%").gsub("_", "\_")
-    @start = params[:start] || '1'
-    @end = params[:end] || '20'
-    @next = @end.to_i+1
+    @start = (params[:start] || '1').to_i
+    @end = (params[:end] || '20').to_i
+    @next = @address+"/search?keyword="+@keyword+"start="+(@end+1).to_s+"&end="+(@end+1+@end-@start).to_s
     keyarray = @keyword.to_s.split(' ')
     professors = Professor.find(:all, :order => :professor_name, :conditions=> ["professor_name like ?","%"+@keyword+"%"])
 
@@ -56,19 +57,24 @@ class ProfessorsController < ApplicationController
     counter = 1
     professors.each do |p|
 
-      if counter >= @start.to_i then
+      if counter >= @start then
            @list << p
       end
 
       counter = counter.to_i+1
 
-      if counter > @end.to_i then
+      if counter > @end then
         break
       end
 
     end
 
-    if @list.count != 20 then
+    if counter<=@end then
+      @next = ""
+    end
+    puts counter
+    puts professors[@start+counter-3].professor_name
+    if professors[@start+counter-3].professor_name == Professor.find(:all, :order => :professor_name, :conditions=> ["professor_name like ?","%"+@keyword+"%"]).last.professor_name
       @next = ""
     end
 
