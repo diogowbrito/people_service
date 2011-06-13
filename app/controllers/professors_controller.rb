@@ -71,9 +71,7 @@ class ProfessorsController < ApplicationController
 
     if counter<=@end then
       @next = ""
-    end
-
-    if professors[@start-@end].professor_name == Professor.find(:all, :order => :professor_name, :conditions=> ["professor_name like ?","%"+@keyword+"%"]).last.professor_name
+    elsif professors[@end-@start].professor_name == Professor.find(:all, :order => :professor_name, :conditions=> ["professor_name like ?","%"+@keyword+"%"]).last.professor_name
       @next = ""
     end
 
