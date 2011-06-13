@@ -1,4 +1,4 @@
-<service name="Pessoas" url="<%=@address%>">
+<service name="PessoasFCT" url="<%=@address%>">
     <provider>G6</provider>
     <serviceID>plp</serviceID>
     <type>academics</type>
