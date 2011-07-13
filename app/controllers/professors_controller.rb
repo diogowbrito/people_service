@@ -37,8 +37,9 @@ class ProfessorsController < ApplicationController
 
   def specific
     @professor = Professor.find(params[:id])
-    @emails = @professor.emails
-    @courses = @professor.courses
+    prof_id = @professor.professor_id
+    @emails = Email.where(:professor_id => prof_id)
+    @courses = Course.where(:professor_id => prof_id)
 
     respond_to :xml
   end
